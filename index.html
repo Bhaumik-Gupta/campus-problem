@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Campus Problem Reporter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Campus Problem Reporter</h1>
+    <label>Name:</label>
+<input type="text" id="name">
+
+<br><br>
+
+<label>Location:</label>
+<input type="text" id="location">
+
+<br><br>
+
+<label>Category:</label>
+<select id="category">
+    <option>    </option>
+    <option>Electrical</option>
+    <option>Water</option>
+    <option>Cleanliness</option>
+    <option>Infrastructure</option>
+    <option>Other</option>
+</select>
+
+<br><br>
+
+<label>Describe the problem:</label>
+<br>
+
+<textarea id="problem" rows="5"></textarea>
+<br><br>
+
+<label>Upload a photo:</label>
+<input type="file" id="problemImage" accept="image/*">
+<br><br>
+
+<img id="imagePreview" style="max-width: 300px; display: none; border-radius: 10px;">
+
+<br><br>
+
+<button type="button" id="submitBtn">Submit Problem</button>
+<div id="complaints">
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
